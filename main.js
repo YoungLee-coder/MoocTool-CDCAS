@@ -9,8 +9,6 @@
 // @grant        none
 // @license    	 MIT
 // @require https://update.greasyfork.org/scripts/502757/1422896/Jquery331.js
-// @downloadURL https://update.greasyfork.org/scripts/473268/%E8%8B%B1%E5%8D%8E%E5%AD%A6%E5%A0%82%E5%88%B7%E8%AF%BE%E8%84%9A%E6%9C%AC.user.js
-// @updateURL https://update.greasyfork.org/scripts/473268/%E8%8B%B1%E5%8D%8E%E5%AD%A6%E5%A0%82%E5%88%B7%E8%AF%BE%E8%84%9A%E6%9C%AC.meta.js
 // ==/UserScript==
 
 /**
