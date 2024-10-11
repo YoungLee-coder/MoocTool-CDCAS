@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         英华学堂刷课脚本(test)
+// @name         英华学堂刷课脚本(自动识别验证码)
 // @namespace    http://tampermonkey.net/
-// @version      1.5.0
+// @version      2.0.2
 // @description  学堂在线自动播放下一集（仅在成都文理学院测试成功，其他学校没试）
-// @author       LayFz
+// @author       YoungLee
 // @match        *://mooc.*
 // @match        *://mooc.cdcas.com/user/*
 // @grant        none
 // @license    	 MIT
-// @require      https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js
+// @require https://update.greasyfork.org/scripts/502757/1422896/Jquery331.js
 // @downloadURL https://update.greasyfork.org/scripts/473268/%E8%8B%B1%E5%8D%8E%E5%AD%A6%E5%A0%82%E5%88%B7%E8%AF%BE%E8%84%9A%E6%9C%AC.user.js
 // @updateURL https://update.greasyfork.org/scripts/473268/%E8%8B%B1%E5%8D%8E%E5%AD%A6%E5%A0%82%E5%88%B7%E8%AF%BE%E8%84%9A%E6%9C%AC.meta.js
 // ==/UserScript==
