@@ -16,7 +16,7 @@
 
 ### 第一步
 
-* 点击链接：https://greasyfork.org/zh-CN/scripts/473268-%E8%8B%B1%E5%8D%8E%E5%AD%A6%E5%A0%82%E5%88%B7%E8%AF%BE%E8%84%9A%E6%9C%AC
+* 点击链接：https://greasyfork.org/zh-CN/scripts/512182-%E8%8B%B1%E5%8D%8E%E5%AD%A6%E5%A0%82%E5%88%B7%E8%AF%BE%E8%84%9A%E6%9C%AC-%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E9%AA%8C%E8%AF%81%E7%A0%81
 
   <img src="img/14.png" alt="" style="zoom:60%;" />
 
