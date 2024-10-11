@@ -18,7 +18,7 @@
 
 * 点击链接：https://greasyfork.org/zh-CN/scripts/473268-%E8%8B%B1%E5%8D%8E%E5%AD%A6%E5%A0%82%E5%88%B7%E8%AF%BE%E8%84%9A%E6%9C%AC
 
-  <img src="D:/YoungLee/Downloads/MoocTools-main/img/14.png" alt="" style="zoom:60%;" />
+  <img src="img/14.png" alt="" style="zoom:60%;" />
 
 ### 第二步
 
@@ -26,21 +26,21 @@
 
 * 如果你已经安装过油猴，直接跳转到[第三步](#step_3)
 
-  <img src="D:/YoungLee/Downloads/MoocTools-main/img/17.png" alt="" style="zoom:60%;" />
+  <img src="img/17.png" alt="" style="zoom:60%;" />
 
-<img src="D:/YoungLee/Downloads/MoocTools-main/img/18.png" alt="" style="zoom:60%;" />
+<img src="img/18.png" alt="" style="zoom:60%;" />
 
-<img src="D:/YoungLee/Downloads/MoocTools-main/img/19.png" alt="" style="zoom:60%;" />
+<img src="img/19.png" alt="" style="zoom:60%;" />
 
 * 如上图，点击看到有该应用就说明安装成功了。
 
 ### <span id="step_3">第三步：</span>
 
-<img src="D:/YoungLee/Downloads/MoocTools-main/img/20.png" alt="" style="zoom:60%;" />
+<img src="img/20.png" alt="" style="zoom:60%;" />
 
-<img src="D:/YoungLee/Downloads/MoocTools-main/img/21.png" alt="" style="zoom:60%;" />
+<img src="img/21.png" alt="" style="zoom:60%;" />
 
-<img src="D:/YoungLee/Downloads/MoocTools-main/img/22.png" alt="" style="zoom:60%;" />
+<img src="img/22.png" alt="" style="zoom:60%;" />
 
 * 如上图，让脚本处于开启状态
 
