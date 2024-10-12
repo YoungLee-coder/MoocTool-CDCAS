@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         英华学堂刷课脚本(自动识别验证码)
 // @namespace    http://tampermonkey.net/
-// @version      2.0.3
+// @version      2.0.4
 // @description  学堂在线自动播放下一集（仅在成都文理学院测试成功，其他学校没试）
 // @author       YoungLee
 // @match        *://mooc.*
@@ -53,6 +53,7 @@
                     console.log("已自动点击开始播放按钮！");
                 } else {
                     console.log("未找到开始播放按钮。");
+                    location.reload();  // 刷新当前页面
                 }
             }, 5000);  // 等待5秒
         }
