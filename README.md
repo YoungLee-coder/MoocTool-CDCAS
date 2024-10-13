@@ -7,7 +7,7 @@
 #### 在安装本脚本之前,请先安装自动识别验证码的脚本,并完成配置
 
 1.[自动识别填充网页验证码 (greasyfork.org)](https://greasyfork.org/zh-CN/scripts/459260-自动识别填充网页验证码)(推荐安装这个)
-2.[万能验证码自动输入（升级版） (greasyfork.org)](https://greasyfork.org/zh-CN/scripts/418942-万能验证码自动输入-升级版)
+2.[万能验证码自动输入（升级版） (greasyfork.org)](https://greasyfork.org/zh-CN/scripts/418942-万能验证码自动输入-升级版)(不推荐,不要安装这个,有概率被封号)
 
 #### 安装刷课脚本(这里借用LayFZ的步骤)
 
