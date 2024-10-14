@@ -1,6 +1,6 @@
 # Mooc-CDCAS
 成都文理学院英华在线&仓辉实训刷课脚本<br>
-改编自[LayFz/MoocToolS](LayFz/MoocToolS),配合自动识别验证码,实现无人刷课<br>
+改编自[LayFz/MoocToolS](https://github.com/LayFz/MoocTools),配合自动识别验证码,实现无人刷课<br>
 
 > 2024年的10月在CDCAS的第三学期,学校给了一堆网课要求我们去看
 >
