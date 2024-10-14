@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         文理仓辉实训刷课脚本(自动识别验证码)
+// @name         仓辉实训刷课脚本(自动识别验证码)
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0
-// @description  仓辉实训自动脚本
+// @description  仓辉实训在线自动播放下一集（仅在成都文理学院测试成功，其他学校没试）
 // @author       YoungLee
 // @match        *://zxshixun.cdcas.com/*
 // @grant        none
