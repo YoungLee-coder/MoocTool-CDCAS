@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         英华学堂刷课脚本(自动识别验证码)
 // @namespace    http://tampermonkey.net/
-// @version      2.0.4
+// @version      2.0.5
 // @description  学堂在线自动播放下一集（仅在成都文理学院测试成功，其他学校没试）
 // @author       YoungLee
 // @match        *://mooc.*
@@ -17,11 +17,10 @@
 (function() {
     'use strict';
 
-    /**
-     * 定义播放下一集的函数
-     */
+    let captchaHandled = false;
+
     function playNext() {
-        const navList = $('.detmain-navlist ').parent();
+        const navList = $('.detmain-navlist').parent();
         const currentChapterIndex = navList.find('.item a').index($('a.on'));
         const chapterLinks = navList.find('.item a');
 
@@ -36,40 +35,37 @@
         }
     }
 
-    /**
-     * 检查验证码弹窗，并在5秒后自动点击“开始播放”按钮
-     */
     function checkCaptchaAndPlay() {
         const captchaLayer = $('#layui-layer1');
 
-        if (captchaLayer.length && captchaLayer.is(':visible')) {
-            console.log("验证码弹窗出现，等待5秒后自动点击开始播放按钮...");
-
+        if (captchaLayer.length && captchaLayer.is(':visible') && !captchaHandled) {
+            console.log("验证码弹窗出现，等待Random秒后自动点击开始播放按钮...");
+            captchaHandled = true;
+ 	    const randomDelay = Math.floor(Math.random() * 4000) + 3000; 
             setTimeout(function() {
-                const playButton = $('.layui-layer-btn0');  // 选择 "开始播放" 按钮
+                const playButton = $('.layui-layer-btn0');
 
                 if (playButton.length) {
                     playButton.click();
                     console.log("已自动点击开始播放按钮！");
+                    captchaHandled = false;  // Reset flag after captcha is handled
                 } else {
-                    console.log("未找到开始播放按钮。");
-                    location.reload();  // 刷新当前页面
+                    console.log("未找到开始播放按钮，刷新页面...");
+                    location.reload();
                 }
-            }, 5000);  // 等待5秒
+            }, randomDelay);
         }
     }
 
-    // 当文档加载完成后执行
     $(document).ready(function() {
         let videoElement;
 
-        // 定义一个定时器，每秒检查视频元素是否存在且已加载完成
-        const timer = setInterval(function() {
+        const videoCheckTimer = setInterval(function() {
             videoElement = $('video');
 
             if (videoElement.length && videoElement[0].readyState === 4) {
                 if (videoElement[0].paused) {
-                    console.log("paused");
+                    console.log("视频暂停，开始播放...");
                     videoElement[0].play();
                 }
 
@@ -79,13 +75,11 @@
 
                 videoElement[0].muted = true;
                 videoElement[0].playbackRate = 1.0;
-                videoElement[0].currentTime = 0;
 
-                clearInterval(timer);
+                clearInterval(videoCheckTimer);
             }
         }, 1000);
 
-        // 页面加载后定时检查验证码弹窗
-        setInterval(checkCaptchaAndPlay, 2000);  // 每2秒检查一次
+        setInterval(checkCaptchaAndPlay, 2000);
     });
 })();
