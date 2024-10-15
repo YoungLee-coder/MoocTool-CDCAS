@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         仓辉实训刷课脚本(自动识别验证码)
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  仓辉实训在线自动播放下一集（仅在成都文理学院测试成功，其他学校没试）
 // @author       YoungLee
 // @match        *://zxshixun.cdcas.com/*
@@ -12,6 +12,8 @@
 
 (function () {
     'use strict';
+
+    let captchaHandled = false;
 
     function playNext() {
         const endFlag = false;
@@ -41,20 +43,22 @@
     function checkCaptchaAndPlay() {
         const captchaLayer = $('#layui-layer1');
 
-        if (captchaLayer.length && captchaLayer.is(':visible')) {
-            console.log("验证码弹窗出现，等待5秒后自动点击开始播放按钮...");
-
-            setTimeout(() => {
-                const playButton = $('.layui-layer-btn0');  // 选择 "开始播放" 按钮
+        if (captchaLayer.length && captchaLayer.is(':visible') && !captchaHandled) {
+            console.log("验证码弹窗出现，等待Random秒后自动点击开始播放按钮...");
+            captchaHandled = true;
+ 	    const randomDelay = Math.floor(Math.random() * 4000) + 3000; 
+            setTimeout(function() {
+                const playButton = $('.layui-layer-btn0');
 
                 if (playButton.length) {
                     playButton.click();
                     console.log("已自动点击开始播放按钮！");
+                    captchaHandled = false;  // Reset flag after captcha is handled
                 } else {
-                    console.log("未找到开始播放按钮。");
-                    location.reload();  // 刷新当前页面
+                    console.log("未找到开始播放按钮，刷新页面...");
+                    location.reload();
                 }
-            }, 5000);
+            }, randomDelay);
         }
     }
 
