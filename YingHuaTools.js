@@ -2,7 +2,7 @@
 // @name         英华学堂刷课脚本(自动识别验证码)
 // @namespace    http://tampermonkey.net/
 // @version      2.0.5
-// @description  学堂在线自动播放下一集（仅在成都文理学院测试成功，其他学校没试）
+// @description  这个项目已归档,请勿再使用
 // @author       YoungLee
 // @match        *://mooc.*
 // @match        *://mooc.cdcas.com/user/*
